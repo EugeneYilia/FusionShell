@@ -410,6 +410,10 @@ public class FileSystemSimulator {
                 }
             } else if (coreOperation.equalsIgnoreCase("exit") || coreOperation.equalsIgnoreCase("quit")) {
                 return;
+            } else if(coreOperation.equalsIgnoreCase("help")){
+                showHelp();
+            } else if (coreOperation.equalsIgnoreCase("advancedHelp")){
+                showAdvancedOperation();
             }
         }
     }
