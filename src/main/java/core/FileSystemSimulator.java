@@ -78,7 +78,8 @@ public class FileSystemSimulator {
                 nextOperation = stringTokenizer.nextToken();
             }
             if (coreOperation.equalsIgnoreCase("bye")) {
-                continue;
+                System.out.println("bye bye");
+                return;
             } else if (coreOperation.equalsIgnoreCase("ls") || coreOperation.equalsIgnoreCase("dir")) {
                 try {
                     File directory = new File(new File("").getCanonicalPath() + File.separator + Bus.getRootDirectory());
